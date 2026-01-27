@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class UsuarioModelResult extends UsuarioModel {
     private String DataPagamento;

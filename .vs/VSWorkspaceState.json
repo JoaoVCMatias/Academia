@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\build\\classes",
+    "\\build\\classes\\dao",
+    "\\build\\classes\\model",
+    "\\src",
+    "\\src\\controller",
+    "\\src\\dao"
+  ],
+  "SelectedNode": "\\src\\dao\\DominioDto.java",
+  "PreviewInSolutionExplorer": false
+}

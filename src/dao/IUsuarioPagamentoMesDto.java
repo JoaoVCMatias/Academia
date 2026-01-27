@@ -9,7 +9,7 @@ import model.UsuarioPagamentoMesModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public interface IUsuarioPagamentoMesDto {
     void criarTabela();

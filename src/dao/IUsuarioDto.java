@@ -11,7 +11,7 @@ import model.UsuarioModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public interface IUsuarioDto {
     public void criarTabela();

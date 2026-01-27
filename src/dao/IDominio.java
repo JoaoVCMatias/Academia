@@ -9,7 +9,7 @@ import model.SexoModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public interface IDominio {
     private void criarTabelaSexo(){}

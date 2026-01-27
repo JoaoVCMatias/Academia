@@ -13,7 +13,7 @@ import java.sql.PreparedStatement;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class DominioDto implements IDominio {
     

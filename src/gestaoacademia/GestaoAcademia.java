@@ -7,7 +7,7 @@ package gestaoacademia;
 import view.MainTela;
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class GestaoAcademia {
 

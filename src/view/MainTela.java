@@ -23,7 +23,7 @@ import model.UsuarioPagamentoMesModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class MainTela extends javax.swing.JFrame {
     

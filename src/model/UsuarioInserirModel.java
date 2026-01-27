@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class UsuarioInserirModel {
     private String Nome;

@@ -8,7 +8,7 @@ import java.sql.Connection;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public interface IConexao {
     public Connection conectar();

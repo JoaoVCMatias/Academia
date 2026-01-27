@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class UsuarioPagamentoMesDto implements IUsuarioPagamentoMesDto {
         private final IConexao connection;

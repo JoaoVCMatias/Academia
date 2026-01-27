@@ -11,7 +11,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class Conexao implements IConexao {
     

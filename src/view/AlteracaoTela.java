@@ -23,7 +23,7 @@ import model.UsuarioModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class AlteracaoTela extends javax.swing.JFrame {
     

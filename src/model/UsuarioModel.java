@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class UsuarioModel {
     private int IdUsuario;

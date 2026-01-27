@@ -16,7 +16,7 @@ import model.UsuarioAlterarModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class UsuarioDto implements IUsuarioDto {
 

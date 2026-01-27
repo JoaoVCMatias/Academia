@@ -21,7 +21,7 @@ import model.UsuarioInserirModel;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class CadastroTela extends javax.swing.JFrame {
     

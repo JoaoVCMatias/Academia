@@ -15,7 +15,7 @@ import java.time.LocalTime;
 
 /**
  *
- * @author joaov
+ * @author pamela
  */
 public class OpcoesTela extends javax.swing.JFrame {
     
