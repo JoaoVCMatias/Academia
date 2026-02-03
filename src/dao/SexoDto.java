@@ -15,27 +15,18 @@ import java.sql.PreparedStatement;
  *
  * @author pamela
  */
-public class DominioDto implements IDominio {
+public class SexoDto implements ISexoDto {
     
     private final IConexao connection;
     
-    public DominioDto(IConexao c)
+    public SexoDto(IConexao c)
     {
         this.connection = c;
     }
     
-    public void CriarTabelas()
-    {
-        criarTabelaSexo();
-    }
     
-    public void CargaTabelas()
-    {
-        cargaTabelaSexo();
-    }
-    
-    
-    private void criarTabelaSexo() {
+    @Override
+    public void criarTabelaSexo() {
         String sql = """
             CREATE TABLE IF NOT EXISTS Sexo (
                 IdSexo INTEGER  PRIMARY KEY AUTOINCREMENT,
@@ -49,7 +40,8 @@ public class DominioDto implements IDominio {
         
     }
 
-    private void cargaTabelaSexo() {
+    @Override
+    public void cargaTabelaSexo() {
         String sql = """
             INSERT OR IGNORE INTO Sexo (Descricao)
             VALUES ('Masculino'), ('Feminino');

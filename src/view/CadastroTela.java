@@ -5,9 +5,8 @@
 package view;
 
 import dao.Conexao;
-import dao.DominioDto;
+import dao.SexoDto;
 import dao.IConexao;
-import dao.IDominio;
 import dao.IUsuarioDto;
 import dao.UsuarioDto;
 import java.awt.Color;
@@ -18,6 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.text.MaskFormatter;
 import model.SexoModel;
 import model.UsuarioInserirModel;
+import dao.ISexoDto;
 
 /**
  *
@@ -26,7 +26,7 @@ import model.UsuarioInserirModel;
 public class CadastroTela extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(CadastroTela.class.getName());
-    private final IDominio dominioDto;
+    private final ISexoDto dominioDto;
     private final IUsuarioDto usuarioDto;
     private MainTela mainTela = null;
     /**
@@ -35,14 +35,14 @@ public class CadastroTela extends javax.swing.JFrame {
     public CadastroTela() {
         initComponents();
         IConexao sqlLite = new Conexao();
-        this.dominioDto = new DominioDto(sqlLite);
+        this.dominioDto = new SexoDto(sqlLite);
         this.SexoCombo();
         this.usuarioDto = new UsuarioDto(sqlLite);
     }
     public CadastroTela(MainTela mainTela) {
         initComponents();
         IConexao sqlLite = new Conexao();
-        this.dominioDto = new DominioDto(sqlLite);
+        this.dominioDto = new SexoDto(sqlLite);
         this.SexoCombo();
         this.usuarioDto = new UsuarioDto(sqlLite);
         this.mainTela = mainTela;

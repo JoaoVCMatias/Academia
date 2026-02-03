@@ -5,9 +5,8 @@
 package view;
 
 import dao.Conexao;
-import dao.DominioDto;
+import dao.SexoDto;
 import dao.IConexao;
-import dao.IDominio;
 import dao.IUsuarioDto;
 import dao.UsuarioDto;
 import java.awt.Color;
@@ -20,6 +19,7 @@ import model.SexoModel;
 import model.UsuarioAlterarModel;
 import model.UsuarioInserirModel;
 import model.UsuarioModel;
+import dao.ISexoDto;
 
 /**
  *
@@ -28,7 +28,7 @@ import model.UsuarioModel;
 public class AlteracaoTela extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AlteracaoTela.class.getName());
-    private IDominio dominioDto ;
+    private ISexoDto dominioDto ;
     private IUsuarioDto usuarioDto;
     private MainTela mainTela;
     private UsuarioModel usuario;
@@ -45,7 +45,7 @@ public class AlteracaoTela extends javax.swing.JFrame {
         IConexao sqlLite = new Conexao();
         this.usuarioDto = new UsuarioDto(sqlLite);
         this.usuario = this.usuarioDto.PesquisarUsuarioPorCPF(CPF);
-        this.dominioDto = new DominioDto(sqlLite);
+        this.dominioDto = new SexoDto(sqlLite);
         this.SexoCombo();
         this.CarregarCampos();
         this.mainTela = mainTela;

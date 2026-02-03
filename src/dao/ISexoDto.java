@@ -11,8 +11,8 @@ import model.SexoModel;
  *
  * @author pamela
  */
-public interface IDominio {
-    private void criarTabelaSexo(){}
-    private void cargaTabelaSexo(){}
+public interface ISexoDto {
+    public void criarTabelaSexo();
+    public void cargaTabelaSexo();
     public List<SexoModel> BuscarSexo();
 }

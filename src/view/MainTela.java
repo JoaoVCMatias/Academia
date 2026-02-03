@@ -5,9 +5,8 @@
 package view;
 
 import dao.Conexao;
-import dao.DominioDto;
+import dao.SexoDto;
 import dao.IConexao;
-import dao.IDominio;
 import dao.IUsuarioDto;
 import dao.IUsuarioPagamentoMesDto;
 import dao.UsuarioDto;
@@ -20,6 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import model.SexoModel;
 import model.UsuarioModel;
 import model.UsuarioPagamentoMesModel;
+import dao.ISexoDto;
 
 /**
  *
@@ -36,31 +36,14 @@ public class MainTela extends javax.swing.JFrame {
     public MainTela() {
         initComponents();
         IConexao sqlLite = new Conexao();
-        DominioDto dominioDao = new DominioDto(sqlLite);
-        dominioDao.CriarTabelas();
-        dominioDao.CargaTabelas();
+        SexoDto sexoDto = new SexoDto(sqlLite);
+        sexoDto.criarTabelaSexo();
+        sexoDto.cargaTabelaSexo();
         usuarioDto = new UsuarioDto(sqlLite);
         usuarioDto.criarTabela();
         usuarioPagamentoDto = new UsuarioPagamentoMesDto(sqlLite);
         usuarioPagamentoDto.criarTabela();
-        LoadTabelaUsuario();
-        //var listaSexo = dominioDao.BuscarSexo();
-
-        
-        
-        //DefaultTableModel modelo = (DefaultTableModel) tabelaSexo.getModel(); 
-        
-        
-        //for(SexoModel sexo : listaSexo)
-        //{
-         //   System.out.print(sexo);
-        //    modelo.addRow(new Object[]{sexo.getIdDominio(), sexo.getDescricao()}); 
-       // }
-        
-        
-        //modelo.addRow(new Object[]{3, "Outro"});
-        //dominioDao.criarTabela();
-        //dominioDao.cargaTabela();
+        this.LoadTabelaUsuario();
         
     }
     
